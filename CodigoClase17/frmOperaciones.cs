@@ -19,7 +19,14 @@ namespace CodigoClase17
 
         private void btnSumar_Click(object sender, EventArgs e)
         {
-            lblResultado.Text = Convert.ToString( Convert.ToInt32(txtValor1.Text) + Convert.ToInt32(txtValor2.Text));
+            lblResultado.Text = Convert.ToString(Convert.ToInt32(txtValor1.Text) +
+                Convert.ToInt32(txtValor2.Text));
+        }
+
+        private void btnRestar_Click(object sender, EventArgs e)
+        {
+            lblResta.Text = Convert.ToString(Convert.ToInt32(txtValor3.Text) -
+                Convert.ToInt32(txtValor4.Text));
         }
     }
 }

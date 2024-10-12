@@ -34,6 +34,10 @@
             txtValor1 = new TextBox();
             txtValor2 = new TextBox();
             lblResultado = new Label();
+            lblResta = new Label();
+            txtValor4 = new TextBox();
+            txtValor3 = new TextBox();
+            btnRestar = new Button();
             SuspendLayout();
             // 
             // btnSumar
@@ -89,11 +93,50 @@
             lblResultado.Text = "Resultado SUMA";
             lblResultado.TextAlign = ContentAlignment.TopRight;
             // 
+            // lblResta
+            // 
+            lblResta.AutoSize = true;
+            lblResta.Location = new Point(592, 166);
+            lblResta.Name = "lblResta";
+            lblResta.Size = new Size(121, 20);
+            lblResta.TabIndex = 9;
+            lblResta.Text = "Resultado RESTA";
+            lblResta.TextAlign = ContentAlignment.TopRight;
+            // 
+            // txtValor4
+            // 
+            txtValor4.AcceptsReturn = true;
+            txtValor4.Location = new Point(233, 163);
+            txtValor4.Name = "txtValor4";
+            txtValor4.Size = new Size(125, 27);
+            txtValor4.TabIndex = 8;
+            // 
+            // txtValor3
+            // 
+            txtValor3.Location = new Point(25, 159);
+            txtValor3.Name = "txtValor3";
+            txtValor3.Size = new Size(125, 27);
+            txtValor3.TabIndex = 7;
+            // 
+            // btnRestar
+            // 
+            btnRestar.Location = new Point(411, 149);
+            btnRestar.Name = "btnRestar";
+            btnRestar.Size = new Size(129, 54);
+            btnRestar.TabIndex = 10;
+            btnRestar.Text = "RESTAR";
+            btnRestar.UseVisualStyleBackColor = true;
+            btnRestar.Click += btnRestar_Click;
+            // 
             // frmOperaciones
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(905, 450);
+            Controls.Add(btnRestar);
+            Controls.Add(lblResta);
+            Controls.Add(txtValor4);
+            Controls.Add(txtValor3);
             Controls.Add(lblResultado);
             Controls.Add(txtValor2);
             Controls.Add(txtValor1);
@@ -114,5 +157,9 @@
         private TextBox txtValor1;
         private TextBox txtValor2;
         private Label lblResultado;
+        private Label lblResta;
+        private TextBox txtValor4;
+        private TextBox txtValor3;
+        private Button btnRestar;
     }
 }
