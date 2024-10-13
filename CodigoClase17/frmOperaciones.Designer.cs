@@ -38,11 +38,15 @@
             txtValor4 = new TextBox();
             txtValor3 = new TextBox();
             btnRestar = new Button();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // btnSumar
             // 
-            btnSumar.Location = new Point(411, 73);
+            btnSumar.Location = new Point(428, 35);
             btnSumar.Name = "btnSumar";
             btnSumar.Size = new Size(129, 54);
             btnSumar.TabIndex = 0;
@@ -70,7 +74,7 @@
             // 
             // txtValor1
             // 
-            txtValor1.Location = new Point(25, 83);
+            txtValor1.Location = new Point(42, 45);
             txtValor1.Name = "txtValor1";
             txtValor1.Size = new Size(125, 27);
             txtValor1.TabIndex = 3;
@@ -78,7 +82,7 @@
             // txtValor2
             // 
             txtValor2.AcceptsReturn = true;
-            txtValor2.Location = new Point(233, 87);
+            txtValor2.Location = new Point(250, 49);
             txtValor2.Name = "txtValor2";
             txtValor2.Size = new Size(125, 27);
             txtValor2.TabIndex = 4;
@@ -86,7 +90,7 @@
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(592, 90);
+            lblResultado.Location = new Point(609, 52);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(120, 20);
             lblResultado.TabIndex = 5;
@@ -96,7 +100,7 @@
             // lblResta
             // 
             lblResta.AutoSize = true;
-            lblResta.Location = new Point(592, 166);
+            lblResta.Location = new Point(606, 67);
             lblResta.Name = "lblResta";
             lblResta.Size = new Size(121, 20);
             lblResta.TabIndex = 9;
@@ -106,21 +110,21 @@
             // txtValor4
             // 
             txtValor4.AcceptsReturn = true;
-            txtValor4.Location = new Point(233, 163);
+            txtValor4.Location = new Point(239, 69);
             txtValor4.Name = "txtValor4";
             txtValor4.Size = new Size(125, 27);
             txtValor4.TabIndex = 8;
             // 
             // txtValor3
             // 
-            txtValor3.Location = new Point(25, 159);
+            txtValor3.Location = new Point(42, 60);
             txtValor3.Name = "txtValor3";
             txtValor3.Size = new Size(125, 27);
             txtValor3.TabIndex = 7;
             // 
             // btnRestar
             // 
-            btnRestar.Location = new Point(411, 149);
+            btnRestar.Location = new Point(426, 50);
             btnRestar.Name = "btnRestar";
             btnRestar.Size = new Size(129, 54);
             btnRestar.TabIndex = 10;
@@ -128,23 +132,49 @@
             btnRestar.UseVisualStyleBackColor = true;
             btnRestar.Click += btnRestar_Click;
             // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = SystemColors.ActiveCaption;
+            groupBox1.Controls.Add(lblResultado);
+            groupBox1.Controls.Add(btnSumar);
+            groupBox1.Controls.Add(txtValor1);
+            groupBox1.Controls.Add(txtValor2);
+            groupBox1.Location = new Point(34, 105);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(778, 125);
+            groupBox1.TabIndex = 11;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Sección SUMAR";
+            // 
+            // groupBox2
+            // 
+            groupBox2.BackColor = SystemColors.ActiveCaption;
+            groupBox2.Controls.Add(lblResta);
+            groupBox2.Controls.Add(txtValor3);
+            groupBox2.Controls.Add(btnRestar);
+            groupBox2.Controls.Add(txtValor4);
+            groupBox2.Location = new Point(36, 247);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(776, 125);
+            groupBox2.TabIndex = 12;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Sección Restar";
+            // 
             // frmOperaciones
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(905, 450);
-            Controls.Add(btnRestar);
-            Controls.Add(lblResta);
-            Controls.Add(txtValor4);
-            Controls.Add(txtValor3);
-            Controls.Add(lblResultado);
-            Controls.Add(txtValor2);
-            Controls.Add(txtValor1);
+            ClientSize = new Size(905, 616);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(btnSumar);
             Name = "frmOperaciones";
             Text = "frmOperaciones";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -161,5 +191,7 @@
         private TextBox txtValor4;
         private TextBox txtValor3;
         private Button btnRestar;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
     }
 }

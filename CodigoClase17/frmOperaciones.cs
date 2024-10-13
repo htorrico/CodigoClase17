@@ -28,5 +28,7 @@ namespace CodigoClase17
             lblResta.Text = Convert.ToString(Convert.ToInt32(txtValor3.Text) -
                 Convert.ToInt32(txtValor4.Text));
         }
+
+        
     }
 }
