@@ -40,6 +40,8 @@
             btnRestar = new Button();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
+            btnCerrar = new Button();
+            btnMenu = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -160,11 +162,35 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Sección Restar";
             // 
+            // btnCerrar
+            // 
+            btnCerrar.BackColor = SystemColors.ActiveCaption;
+            btnCerrar.Location = new Point(374, 465);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(129, 54);
+            btnCerrar.TabIndex = 11;
+            btnCerrar.Text = "CERRAR";
+            btnCerrar.UseVisualStyleBackColor = false;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
+            // btnMenu
+            // 
+            btnMenu.BackColor = SystemColors.ActiveCaption;
+            btnMenu.Location = new Point(218, 465);
+            btnMenu.Name = "btnMenu";
+            btnMenu.Size = new Size(129, 54);
+            btnMenu.TabIndex = 13;
+            btnMenu.Text = "IR MENÚ";
+            btnMenu.UseVisualStyleBackColor = false;
+            btnMenu.Click += btnMenu_Click;
+            // 
             // frmOperaciones
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(905, 616);
+            Controls.Add(btnMenu);
+            Controls.Add(btnCerrar);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label2);
@@ -193,5 +219,7 @@
         private Button btnRestar;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
+        private Button btnCerrar;
+        private Button btnMenu;
     }
 }

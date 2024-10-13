@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            txtSueldo = new TextBox();
+            label4 = new Label();
+            btnCalcular = new Button();
             dtpFechaNacimiento = new DateTimePicker();
             txtNombresApellidos = new TextBox();
             cboTipoDocumento = new ComboBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            btnCalcular = new Button();
             groupBox2 = new GroupBox();
-            label4 = new Label();
-            txtSueldo = new TextBox();
-            label5 = new Label();
             label6 = new Label();
+            label5 = new Label();
+            btnCerrar = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -63,6 +64,31 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos Personales";
+            // 
+            // txtSueldo
+            // 
+            txtSueldo.Location = new Point(236, 144);
+            txtSueldo.Name = "txtSueldo";
+            txtSueldo.Size = new Size(242, 27);
+            txtSueldo.TabIndex = 13;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(70, 144);
+            label4.Name = "label4";
+            label4.Size = new Size(55, 20);
+            label4.TabIndex = 12;
+            label4.Text = "Sueldo";
+            // 
+            // btnCalcular
+            // 
+            btnCalcular.Location = new Point(245, 280);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(129, 54);
+            btnCalcular.TabIndex = 11;
+            btnCalcular.Text = "CALCULAR";
+            btnCalcular.UseVisualStyleBackColor = true;
             // 
             // dtpFechaNacimiento
             // 
@@ -114,15 +140,6 @@
             label1.TabIndex = 0;
             label1.Text = "TipoDocumento";
             // 
-            // btnCalcular
-            // 
-            btnCalcular.Location = new Point(245, 280);
-            btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(129, 54);
-            btnCalcular.TabIndex = 11;
-            btnCalcular.Text = "CALCULAR";
-            btnCalcular.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             groupBox2.BackColor = Color.FromArgb(192, 255, 192);
@@ -135,21 +152,14 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Resultados";
             // 
-            // label4
+            // label6
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(70, 144);
-            label4.Name = "label4";
-            label4.Size = new Size(55, 20);
-            label4.TabIndex = 12;
-            label4.Text = "Sueldo";
-            // 
-            // txtSueldo
-            // 
-            txtSueldo.Location = new Point(236, 144);
-            txtSueldo.Name = "txtSueldo";
-            txtSueldo.Size = new Size(242, 27);
-            txtSueldo.TabIndex = 13;
+            label6.AutoSize = true;
+            label6.Location = new Point(319, 49);
+            label6.Name = "label6";
+            label6.Size = new Size(137, 20);
+            label6.TabIndex = 15;
+            label6.Text = "Impuesto a la renta";
             // 
             // label5
             // 
@@ -160,20 +170,23 @@
             label5.TabIndex = 14;
             label5.Text = "Es Mayor de edad?";
             // 
-            // label6
+            // btnCerrar
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(319, 49);
-            label6.Name = "label6";
-            label6.Size = new Size(137, 20);
-            label6.TabIndex = 15;
-            label6.Text = "Impuesto a la renta";
+            btnCerrar.BackColor = SystemColors.ActiveCaption;
+            btnCerrar.Location = new Point(318, 621);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(129, 54);
+            btnCerrar.TabIndex = 12;
+            btnCerrar.Text = "CERRAR";
+            btnCerrar.UseVisualStyleBackColor = false;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // frmPersona
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(838, 687);
+            Controls.Add(btnCerrar);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "frmPersona";
@@ -200,5 +213,6 @@
         private GroupBox groupBox2;
         private Label label6;
         private Label label5;
+        private Button btnCerrar;
     }
 }

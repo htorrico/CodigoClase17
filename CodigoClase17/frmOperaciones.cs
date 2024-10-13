@@ -29,6 +29,16 @@ namespace CodigoClase17
                 Convert.ToInt32(txtValor4.Text));
         }
 
-        
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            //Cerrar el formulario actual
+            this.Close();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            frmMenu frmMenu = new frmMenu();
+            frmMenu.Show();
+        }
     }
 }
