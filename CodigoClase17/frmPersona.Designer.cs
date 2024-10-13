@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            dateTimePicker1 = new DateTimePicker();
-            textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
+            dtpFechaNacimiento = new DateTimePicker();
+            txtNombresApellidos = new TextBox();
+            cboTipoDocumento = new ComboBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            btnRestar = new Button();
+            btnCalcular = new Button();
             groupBox2 = new GroupBox();
             label4 = new Label();
             txtSueldo = new TextBox();
@@ -50,10 +50,10 @@
             groupBox1.BackColor = SystemColors.ActiveCaption;
             groupBox1.Controls.Add(txtSueldo);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(btnRestar);
-            groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(btnCalcular);
+            groupBox1.Controls.Add(dtpFechaNacimiento);
+            groupBox1.Controls.Add(txtNombresApellidos);
+            groupBox1.Controls.Add(cboTipoDocumento);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
@@ -64,28 +64,28 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos Personales";
             // 
-            // dateTimePicker1
+            // dtpFechaNacimiento
             // 
-            dateTimePicker1.Location = new Point(236, 207);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(250, 27);
-            dateTimePicker1.TabIndex = 5;
+            dtpFechaNacimiento.Location = new Point(236, 207);
+            dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            dtpFechaNacimiento.Size = new Size(250, 27);
+            dtpFechaNacimiento.TabIndex = 5;
             // 
-            // textBox1
+            // txtNombresApellidos
             // 
-            textBox1.Location = new Point(236, 89);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(242, 27);
-            textBox1.TabIndex = 4;
+            txtNombresApellidos.Location = new Point(236, 89);
+            txtNombresApellidos.Name = "txtNombresApellidos";
+            txtNombresApellidos.Size = new Size(242, 27);
+            txtNombresApellidos.TabIndex = 4;
             // 
-            // comboBox1
+            // cboTipoDocumento
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "DNI", "RUC" });
-            comboBox1.Location = new Point(236, 42);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(242, 28);
-            comboBox1.TabIndex = 3;
+            cboTipoDocumento.FormattingEnabled = true;
+            cboTipoDocumento.Items.AddRange(new object[] { "DNI", "RUC" });
+            cboTipoDocumento.Location = new Point(236, 42);
+            cboTipoDocumento.Name = "cboTipoDocumento";
+            cboTipoDocumento.Size = new Size(242, 28);
+            cboTipoDocumento.TabIndex = 3;
             // 
             // label3
             // 
@@ -114,14 +114,14 @@
             label1.TabIndex = 0;
             label1.Text = "TipoDocumento";
             // 
-            // btnRestar
+            // btnCalcular
             // 
-            btnRestar.Location = new Point(245, 280);
-            btnRestar.Name = "btnRestar";
-            btnRestar.Size = new Size(129, 54);
-            btnRestar.TabIndex = 11;
-            btnRestar.Text = "GRABAR";
-            btnRestar.UseVisualStyleBackColor = true;
+            btnCalcular.Location = new Point(245, 280);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(129, 54);
+            btnCalcular.TabIndex = 11;
+            btnCalcular.Text = "CALCULAR";
+            btnCalcular.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -188,15 +188,15 @@
         #endregion
 
         private GroupBox groupBox1;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
+        private TextBox txtNombresApellidos;
+        private ComboBox cboTipoDocumento;
         private Label label3;
         private Label label2;
         private Label label1;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpFechaNacimiento;
         private TextBox txtSueldo;
         private Label label4;
-        private Button btnRestar;
+        private Button btnCalcular;
         private GroupBox groupBox2;
         private Label label6;
         private Label label5;
