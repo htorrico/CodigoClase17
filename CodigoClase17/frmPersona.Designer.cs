@@ -42,6 +42,7 @@
             label6 = new Label();
             label5 = new Label();
             btnCerrar = new Button();
+            LBLContador = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -181,11 +182,21 @@
             btnCerrar.UseVisualStyleBackColor = false;
             btnCerrar.Click += btnCerrar_Click;
             // 
+            // LBLContador
+            // 
+            LBLContador.AutoSize = true;
+            LBLContador.Location = new Point(498, 627);
+            LBLContador.Name = "LBLContador";
+            LBLContador.Size = new Size(17, 20);
+            LBLContador.TabIndex = 13;
+            LBLContador.Text = "0";
+            // 
             // frmPersona
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(838, 687);
+            Controls.Add(LBLContador);
             Controls.Add(btnCerrar);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -196,6 +207,7 @@
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -214,5 +226,6 @@
         private Label label6;
         private Label label5;
         private Button btnCerrar;
+        private Label LBLContador;
     }
 }
